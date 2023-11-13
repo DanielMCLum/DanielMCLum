@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulari.css">
+    <title>Enquesta porfessorat</title>
+</head>
+<body>
+    <h1>ENQUESTA PROFESSORAT</h1>
+    <fieldset class="tot">
+        <form method="post">
+        <fieldset class="one">
+            <legend>DADES PERSONALS</legend>
+            Edat *<br>
+            <input type="number" name="edad" placeholder="Inseriu l'edad">
+            <br>Email<br>
+            <input type="email" name="correo" size="80">
+            <br>Contrassenya *<br>
+            <input type="text" name="key" placeholder="Inseriu la teva contrassenya" size="80">
+            <br>Data de naixement<br>
+            <input type="date" name="data">
+            <p>*Camps obligatoris</p>
+        </fieldset>
+        <fieldset class="two">
+            <legend>Moduls a evaluar</legend>
+            <select name="moduls" id="moduls">
+                <option selected style="color: grey;">Seleccioneu</option>
+                    <option value="M01">M01</option>
+                    <option value="M02">M02</option>
+                    <option value="M03">M03</option>
+                    <option value="M04">M04</option>
+                    <option value="M05">M05</option>
+                    <option value="EIE">EIE</option>
+                    <option value="FOL">FOL</option>
+            </select>
+        </fieldset>
+        <fieldset class="three">
+            <legend>Cicle</legend>
+            <input type="radio" name="boton" value="ASIX">ASIX
+            <input type="radio" name="boton" value="DAM">DAM
+            <input type="radio" name="boton" value="DAW">DAW
+            <input type="radio" name="boton" value="BIO">BIOINFORMÀTICA
+        </fieldset>
+        <fieldset class="four">
+            <legend>Professor a evaluar</legend>
+            Nom professor: <br>
+            <input type="text" name="nom" placeholder="Inseriu el nom" size="80">
+            <p>Grau de satisfacció de 0 a 10.<br>
+            <input type="range" name="satisfacció" min="0" max="10"></p>
+            <p>Comentaris: <br>
+            <textarea name="comments" cols="80" rows="10" placeholder="Inseriu els comentaris"></textarea></p>
+        </fieldset>
+        <fieldset class="five">
+            <legend>Explica alguna cosa sobre tu</legend>
+            Ets repetidor?<br>
+            <input class="cuadrado" type="radio" name="boton2" value="s">Si
+            <input class="cuadrado" type="radio" name="boton2" value="n">No
+            <p>Color preferit<br>
+            <input type="color" name="color"></p>
+            <p>Direccio web<br>
+            <input type="url" name="web"></p>
+            <p>Situacio actual<br>
+            <select name="menu2">
+                <option selected></option>
+                    <option value="Estudis">Estudis</option>
+                    <option value="FCT">FCT</option>
+                    <option value="Dual">Dual</option>
+                    <option value="E_F">Estudis-FCT</option>
+                    <option value="T_E">Treballo-Estudis</option>
+            </select>
+        </fieldset>
+        <fieldset class="six">
+            <legend>CURSOS EXTERNS</legend>
+            <input type="checkbox" name="boton" value="cc">Cloud Computing
+            <input type="checkbox" name="boton" value="bd">Big Data
+            <input type="checkbox" name="boton" value="u">Unity
+        </fieldset>
+        <fieldset class="seven">
+            <legend>Data enquesta</legend>
+            Fecha:
+            <input type="date" name="data">
+            Hora:
+            <input type="time" name="hour">            
+        </fieldset>
+        <fieldset class="eight">
+            <input type="button" name="envia()" value="Enviar" onclick="alert('Has enviat el formulari')">
+            <input type="button" name="esborrar" value="Esborrar">
+            <input type="button" name="surt" value="Surt">
+        </fieldset>
+        </form>
+    </fieldset>
+</body>
+</html>

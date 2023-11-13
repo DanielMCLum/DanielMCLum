@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    background-image: url(/imagenes/Resort_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: block;
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(238, 192, 255, 0.10));
+    color: azure;
+}
+
+.header   {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-left: 5px;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: space-around;
+    transition: all 200ms ease;
+}
+
+.header img {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.logoname {
+    transition: all 1200ms;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+
+.logoname:hover {
+    transform: scale(1.2);
+}
+
+.nombre_empresa {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.header_right{
+    max-width: 500px;
+    height: 100%;
+    margin-left: auto;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+}
+
+nav  ul  li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li.home > a{
+    background-image: url(imagenes/home.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 00px 25px;
+    transition: all 1200ms ease;
+}
+
+nav > ul > li.home:hover > a{
+    background-image: url(imagenes/home_hover.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 00px 25px;
+}
+
+nav > ul> li.user > label{
+    background-image: url(imagenes/User.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 25px;
+    transition: all 1200ms;
+    height: 100%;
+    
+}
+
+nav > ul> li.user:hover > label{
+    background-image: url(imagenes/user_hover.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 25px;
+    transition: all 1200ms;
+}
+
+nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 14px;
+    color: azure;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: rgba(128, 128, 128, 0.128);
+    box-shadow: 0px 0px 10px 0px rgba(249, 168, 255, 0.726);
+}
+
+div.menu nav ul li ul {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.449);
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    padding: 10px 0px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(251, 193, 255, 0.337);
+    z-index: 10;
+    transition: all 800ms ease;
+}
+
+div.header_right nav ul li ul {
+    border-radius: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.449);
+    position: absolute;
+    padding: 10px 0px;
+    top: 60px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(251, 193, 255, 0.337);
+    z-index: 10;
+    transition: all 800ms ease;
+}
+
+div nav ul li:hover ul{
+    top: 70px;
+    opacity: 1;
+    left: 4px;
+}
+
+.idioma {
+    border-radius: 0;
+    padding-top: 0px;
+    width: 50px;
+    left: 40px;
+}
+
+/*nav ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 35%;
+}*/
+
+nav ul li ul a{
+    display: block;
+    color: rgba(39, 0, 18, 0.989);
+    padding: 6px;
+    padding-left: 14px 0px;
+    margin-top: 10px;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+nav ul li ul a:hover{
+    font-size: 18px;
+    background-color: rgba(240, 213, 255, 0.929);
+    box-shadow: 0px 0px 10px 0px rgba(107, 0, 50, 0.66);
+}
+
+/*Login*/
+
+div.login{
+    background: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-left: -500%;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.6);
+    width: 350px;
+    position: absolute;
+    border-radius: 4px;
+    color: black;
+    transition: all 600ms ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.login h2{
+    text-align: center;
+    padding:  20px 0 20px 0;
+    border-bottom: 1px solid;
+}
+
+.login form{
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+}
+
+form .username {
+    position: relative;
+    margin: 30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.username label{
+    font-size: 16px;
+    pointer-events: none;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: purple;
+    font-size: 18px;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+input[type="submit"]:hover{
+    border-color: black;
+}
+
+#check_user{
+    display: none;
+}
+
+#label_check_user {
+    display:block;
+}
+
+#check_user:checked ~ div.login{
+    margin-top: 20px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*ELEMENTOS RESPONSIVOS*/
+
+
+.icon_menu {
+    font-size: 26px;
+    color: beige;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#label_check{
+    width: 46px;
+    height: 100%;
+    display: none;
+}
+
+#check_home{
+    display: none;
+}
+
+@media screen and (max-width:870px){
+
+    .header{
+        height: 60px;
+    }
+
+    .logoname{
+        transform: scale(0.8);
+        margin: 10px;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    .nombre_empresa{
+        display: none;
+    }
+
+    div.menu nav ul {
+        flex-direction: column;
+        background: linear-gradient(rgba(252, 94, 255, 0.6), rgba(65, 38, 67, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+        position: fixed;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        height: 0px;
+        opacity: 1;
+        transition: all 600ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .user {
+        transform: scale(0.8);
+    }
+
+    nav > ul > li.home > a {
+        background-position: 20px;
+        background-size: 30px;
+    }
+
+    div.header_right nav ul li ul{
+        top: 0px;
+    }
+
+    div.header_right nav ul li:hover ul{
+        top: 0px;
+        opacity: 1;
+        left: 4px;
+        background:none;
+        height: 100%;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label_check{
+        display: block;
+    }
+
+    .menu{
+        margin-left: 20px;
+    }
+
+    .icon_menu{
+        display: flex;
+    }
+
+    #check_home:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+}

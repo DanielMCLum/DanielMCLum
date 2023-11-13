@@ -1,0 +1,72 @@
+a {
+    color: black;
+}
+
+body {
+    
+    text-align: center;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-geometrico_53876-115958.jpg);
+    background-size: cover;
+}
+
+table {
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: auto;
+}
+
+H1 {
+    color: rgb(190, 255, 255);
+    font: 200% message-box;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.m01 {
+    background-color: rgb(235, 183, 119);
+}
+
+.m02 {
+    background-color: antiquewhite;
+}
+
+.m03 {
+    background-color: rgb(208, 255, 170);
+}
+
+.m04 {
+    background-color: rgb(199, 252, 240);
+}
+
+.m05 {
+    background-color: rgba(174, 168, 253, 0.411);
+}
+
+.tut {
+    background-color: rgb(212, 47, 190);
+}
+
+.nada{
+    background-color: rgb(177, 172, 172);
+}
+
+.eie {
+    background-color: rgb(122, 155, 206);
+}
+
+.fol {
+    background-color: rgb(162, 158, 216);
+}
+
+.patio {
+    background-color: rgb(243, 255, 78);
+}
+
+.hora {
+    background-color: rgb(138, 189, 196);
+}
+
+.dia {
+    background-color: rgb(253, 176, 191);
+}

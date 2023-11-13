@@ -1,0 +1,56 @@
+body {
+    width: 92%;
+    margin: auto;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+fieldset {
+    margin-top: 5px;
+}
+
+legend {
+    text-decoration-line: underline;
+    font-weight: bolder;
+}
+
+.tot {
+    font-family: Sans-serif;
+    border-color: red;
+}
+
+.one {
+    background-color: aqua;
+    margin-top: 10px;
+}
+
+.two {
+    background-color: pink;
+}
+
+.three {
+    background-color: yellow;
+}
+
+.four {
+    background-color: green;
+}
+
+.five {
+    background-color:rgb(160, 145, 145);
+}
+
+.six {
+    background-color: orangered;
+}
+
+.seven {
+    background-color: brown;
+}
+
+.eight {
+    background-color: rgb(58, 56, 57);
+}
